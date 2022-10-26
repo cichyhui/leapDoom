@@ -31,12 +31,12 @@ def on_message(ws, message):
         grabStrengthLeft = handl["grabStrength"]
         grabStrengthRight = handr["grabStrength"]
 
-        text = f'lewa x  {palmPositionLeftX}\n' \
-               f'lewa y  {palmPositionLeftY}\n' \
-               f'lewa chwyt  {grabStrengthLeft}\n' \
-               f'prawa x  {palmPositionRightX}\n' \
-               f'prawa y  {palmPositionRightY}\n' \
-               f'prawa chwyt  {grabStrengthRight}\n'
+        text = f'left x  {palmPositionLeftX}\n' \
+               f'left y  {palmPositionLeftY}\n' \
+               f'left grab  {grabStrengthLeft}\n' \
+               f'right x  {palmPositionRightX}\n' \
+               f'right y  {palmPositionRightY}\n' \
+               f'right grab  {grabStrengthRight}\n'
 
         if grabStrengthLeft == 1:  # use
             keyboard.press(Key.space)
